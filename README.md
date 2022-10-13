@@ -1,15 +1,16 @@
 # capacitor-pip-plugin
 
-capacitor picture in pircture plugin
+capacitor picture in picture plugin (only Android support)
 
 ## Install
 
 ```bash
-npm install capacitor-pip-plugin
+npm install capacitor-pip-plugin (not yet)
 npx cap sync
 ```
 
-## Android 
+## Android
+#### The plugin supports Android 12 (API level 31) and above
 ### Add to MainActivity
 
 ```typescript

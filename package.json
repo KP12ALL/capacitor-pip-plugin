@@ -1,7 +1,7 @@
 {
   "name": "capacitor-pip-plugin",
   "version": "0.0.1",
-  "description": "capacitor picture in pircture plugin",
+  "description": "capacitor picture in picture plugin",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
