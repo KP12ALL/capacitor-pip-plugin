@@ -9,6 +9,31 @@ npm install capacitor-pip-plugin
 npx cap sync
 ```
 
+## Android 
+### Add to MainActivity
+
+```typescript
+import android.content.res.Configuration;
+
+import com.getcapacitor.BridgeActivity;
+import com.getcapacitor.PluginHandle;
+
+import tv.m12all.pip.PipPlugin;
+
+public class MainActivity extends BridgeActivity {
+    // ...
+
+    @Override
+    public void onPictureInPictureModeChanged(boolean isInPictureInPictureMode, Configuration newConfig) {
+        PluginHandle pipPlugin = bridge.getPlugin("Pip");
+        if (pipPlugin != null) {
+            PipPlugin pipPluginInstance = (PipPlugin) pipPlugin.getInstance();
+            pipPluginInstance.onPictureAndPictureModeChange(isInPictureInPictureMode);
+        }
+    }
+}
+```
+
 ## API
 
 <docgen-index>
