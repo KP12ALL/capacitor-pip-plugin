@@ -26,8 +26,6 @@ public class PipPlugin extends Plugin {
                     Logger.debug(getLogTag(), "Changing pip boundaries");
                 }
             });
-
-            Logger.debug(getLogTag(), "TUSHE LOAD");
         }
     }
 

@@ -7,12 +7,11 @@ import Capacitor
  */
 @objc(PipPlugin)
 public class PipPlugin: CAPPlugin {
-    private let implementation = Pip()
+    @objc func enable(_ call: CAPPluginCall) {
+        call.resolve(["value": "Not implemented"])
+    }
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.resolve([
-            "value": implementation.echo(value)
-        ])
+     @objc func disable(_ call: CAPPluginCall) {
+        call.resolve(["value": "Not implemented"])
     }
 }
