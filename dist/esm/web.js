@@ -1,15 +1,10 @@
-import {WebPlugin} from '@capacitor/core';
-
+import { WebPlugin } from '@capacitor/core';
 export class PipWeb extends WebPlugin {
     async enable() {
-        const message = { value: 'Not implemented on web' };
-        console.log('PIP', message);
-        return message;
+        return { value: 'Not implemented on web' };
     }
     async disable() {
-        const message = { value: 'Not implemented on web' };
-        console.log('PIP', message);
-        return message;
+        return { value: 'Not implemented on web' };
     }
 }
 //# sourceMappingURL=web.js.map

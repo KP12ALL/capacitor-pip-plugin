@@ -1,5 +1,4 @@
-import {PluginListenerHandle} from '@capacitor/core';
-
+import { PluginListenerHandle } from '@capacitor/core';
 export interface PipState {
     isInPictureInPictureMode: boolean;
 }
