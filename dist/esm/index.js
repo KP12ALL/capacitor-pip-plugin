@@ -1,5 +1,4 @@
-import {registerPlugin} from '@capacitor/core';
-
+import { registerPlugin } from '@capacitor/core';
 const Pip = registerPlugin('Pip', {
     web: () => import('./web').then(m => new m.PipWeb()),
 });

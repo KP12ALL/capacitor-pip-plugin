@@ -7,14 +7,10 @@ var capacitorPip = (function (exports, core) {
 
     class PipWeb extends core.WebPlugin {
         async enable() {
-            const message = { value: 'Not implemented on web' };
-            console.log('PIP', message);
-            return message;
+            return { value: 'Not implemented on web' };
         }
         async disable() {
-            const message = { value: 'Not implemented on web' };
-            console.log('PIP', message);
-            return message;
+            return { value: 'Not implemented on web' };
         }
     }
 
